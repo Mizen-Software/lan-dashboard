@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Webapp</title>
+  <link rel="stylesheet" href="/static/reset.css">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Dashboard</h1>
+  </header>
+
+  <main>
+    <div id="twitter-feed">
+      <a class="twitter-timeline"
+        href="https://twitter.com/realDonaldTrump"
+        data-width="300"
+        data-height="600"
+      >
+      Tweets by @realDonaldTrump
+      </a>
+    </div>
+    <div id="weather"> </div>
+  </main>
+
+  <footer>
+    <p><small>Mark Mizen 2017</small></p>
+  </footer>
+
+  <script>
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+  
+</body>
+
+</html>
