@@ -7,11 +7,19 @@ html, body{
   line-height: 1.4;
 }
 
-header, main, footer{
+*{
+  box-sizing: border-box;
+}
+
+header, 
+main, 
+.main,
+footer{
   width: 100%;
   max-width: 50rem;
   margin: auto;
   background-color: #f3f3f3;
+  padding: 0.6rem 1rem;
 }
 
 h1{
